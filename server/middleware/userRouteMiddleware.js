@@ -17,8 +17,12 @@ const tryCatchResError = async (req, res, next, func) => {
 };
 
 const applyRouteMiddleware = app => {
+  app.post("/user", async (req, res, next) => {});
   app.get("/user/:id", async (req, res, next) => {});
-  app.get("/users");
+  app.get("/users", async (req, res, next) => {});
+  app.put("/user/:id", async (req, res, next) => {});
+  app.delete("/user/:id", async (req, res, next) => {});
+
 };
 
 module.exports = { applyRouteMiddleware };
