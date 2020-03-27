@@ -1,12 +1,9 @@
 const mongoose = require("mongoose");
-const {mongo} = require("../../config");
-mongoose.connect(
-  mongo.conectionString,
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  }
-);
+const { mongo } = require("../../config");
+mongoose.connect(mongo.conectionString, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 
 const userSchema = require("../schemas/user")();
 const User = mongoose.model("User", userSchema);
@@ -20,7 +17,7 @@ const tryCatchResError = async (req, res, next, func) => {
 };
 
 const applyRouteMiddleware = app => {
-  app.get("/user/:id");
+  app.get("/user/:id", async (req, res, next) => {});
   app.get("/users");
 };
 
