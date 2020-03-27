@@ -1,0 +1,26 @@
+{
+  "name": "rocc",
+  "version": "1.0.0",
+  "description": "A cloud sharing file editing webapp",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avivzikel/ROCC.git"
+  },
+  "author": "adirandaviv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avivzikel/ROCC/issues"
+  },
+  "homepage": "https://github.com/avivzikel/ROCC#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6",
+    "uuid": "^3.3.3"
+  }
+}
