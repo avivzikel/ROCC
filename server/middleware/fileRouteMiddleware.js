@@ -12,11 +12,10 @@ const tryCatchResError = async (req, res, next, func) => {
 };
 
 const applyRouteMiddleware = app => {
-  app.post("/user", async (req, res, next) => {});
-  app.get("/user/:id", async (req, res, next) => {});
-  app.get("/users", async (req, res, next) => {});
-  app.put("/user/:id", async (req, res, next) => {});
-  app.delete("/user/:id", async (req, res, next) => {});
+  app.post("/file", async (req, res, next) => {});
+  app.get("/file/:id", async (req, res, next) => {});
+  app.put("/file/:id", async (req, res, next) => {});
+  app.delete("/file/:id", async (req, res, next) => {});
 
 };
 
